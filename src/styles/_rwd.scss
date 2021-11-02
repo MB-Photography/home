@@ -1,0 +1,70 @@
+@mixin instaFlex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+@media (min-aspect-ratio: 1/10 ) and (max-aspect-ratio: 10/6 ){
+    .Navbar{
+        width: 100vw;
+        height: 20vh;
+        @include instaFlex();
+        .Navbar-middle{
+            width: 100%;
+            height: 30%;
+            order: 1;
+            font-size: 2rem;
+            margin-top:1vh;
+        }
+        .Menu{
+            order: 2;
+            @include instaFlex();
+            width: 100%;
+            height: 35%;
+            .Navbar-button{
+                display: inline-block;
+                @include instaFlex();
+                width: 33%;
+                height: calc(100% - 1vh);
+                margin: 0;
+                font-size: 1.3rem;
+            }
+            .Navbar-button:before{
+                bottom: 1.5px;
+            }
+        }
+    }
+    .people .nfo{
+        margin:0;
+        width: 100%;
+        height:100%;
+        @include instaFlex();
+        align-items: flex-start;
+        h3{
+            @include instaFlex();
+            font-size: 3rem;
+            margin: 3vh 0 -5vh 0;
+            width: 100%;        }
+        p{
+            @include instaFlex();
+            font-size: 1.8rem;
+            line-height: normal;
+            width: 90%;
+            margin:0;
+        }
+        a .button{
+            @include instaFlex();
+            width:34vw;
+            margin:0;
+        }
+    }
+    .social-links{
+        font-size: 1.3rem;
+    }
+    .mich-name{
+        left:0;
+    }
+    .CONTACT, .SOCIAL {
+        background-image: url('../images/PicsArt_07-29-11.43.37MIN(1).jpg')!important;
+    }
+}

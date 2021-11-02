@@ -1,0 +1,135 @@
+$color: white;
+
+@mixin imgbkg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@mixin instaFlex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.body{
+    display:flex;
+    justify-content: center;
+    align-items: flex-end;
+    @include imgbkg();
+    height:89.5vh;
+    //background-image: url('../images/o1.jpg');
+}
+body{
+    background-color: rgb(71, 66, 66);
+}
+.mich-name{
+    bottom:6vh;
+    left:45vw;
+    color:$color;
+    position: absolute;
+    h1{
+        font-family: 'Spartan';
+        font-size: 48.8px;
+        letter-spacing: -1px;
+    }
+    h4{
+        font-family: 'Sanchez';
+        font-size: 33.8px;
+        letter-spacing: 1px;
+        margin-top:3vh;
+    }
+}
+.slide{
+    height:100%;
+    width: 100vw;
+    //display:flex;
+    //justify-content: center;
+    background-size: cover;
+    background-position: center;
+}
+.people{
+    .boode-img{
+        width:38vw;
+        height:100%;
+        @include imgbkg();
+    }
+    .nfo {
+        width: 37vw;
+        height: 100%;
+        display:flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.5);
+        margin-left:50.8vw;
+        h3{
+            font-family: 'Spartan';
+            font-size: 52.2px;
+            letter-spacing: -1px;
+            color: $color;
+            width:90%;
+            //margin-top:43%;
+            margin-left:3vw;
+        }
+        p{
+            //margin-top:-3vh;
+            font-family: 'Sanchez';
+            font-size: 36.6px;
+            color: $color;
+            letter-spacing: 1px;
+            width:90%;
+            line-height: 150%;
+            margin-bottom:-4vh;
+            margin-left:2.5vw;
+        }
+    }
+        .correction{
+            margin-left:50.5vw;
+        }
+}
+a{
+    text-decoration: none;
+    .button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Sanchez';
+        font-size: 17px;
+        letter-spacing: 1px;
+        color: $color;
+        border: 4px solid $color;
+        margin-left:50%;
+        width: 8.5vw;
+        height: 4.5vh;
+        border-radius: 10px;
+        margin-left: 48%;
+        margin-bottom:4vh;
+        cursor: pointer;
+    }
+}
+.social-links{
+    @include instaFlex();
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: flex-start;
+    font-family: 'Sanchez';
+    margin-bottom: .5rem;
+    .social-media-ico{
+        width: 36.6px;
+        height:36.6px;
+        cursor: pointer;
+    }
+    a{
+        padding-right: 1vw;
+        display: inline-block;
+        color: white;
+        text-decoration: underline;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        font-family: 'Sanchez';
+    }
+}
+.mIco{
+    font-size:36.6px;
+    margin-right: 1vw;
+}
